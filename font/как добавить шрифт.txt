@@ -1,0 +1,19 @@
+Добавить шрифт через гугл (+в индекс ссылка с сайта)
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+Добавить шрифт из папки на компьтере
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../font/OpenSans-Bold.ttf);
+}
+
+li {
+    font-family: 'OpenSans';
+}
