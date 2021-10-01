@@ -6,28 +6,140 @@ body {
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none; /*убирает нижнюю линию у ссылок*/
 }
+
 h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;   
+    letter-spacing: -2.5px; /*межбуквенный интервал*/
+    line-height: 1.1; /*межстрочный интервал*/
+    max-width: 540px; /*максимальная ширина*/
+    margin-bottom: 65px; /*отступ снизу*/
 }
+
+.title-40 {
+    font-size: 50px;
+    letter-spacing: -1.1px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+}
+
+.title-40 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1085e4;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.page-stat .title-h2, .page-screen .title-h2{
+    text-align: center;
+    margin: 0 auto; /*отцентроровать*/
+}
+
+.wrap {
+    max-width: 1110px; /*максимальная ширина блока*/
+    margin: 0 auto;
+}
+
+/*
+.page-stat .title-h2{
+    max-width: 500px;
+}
+
+.page-screen .title-h2{
+    font-size: 40px;
+}
+
+.page-screen .title-h2 span{
+    font-size: 18px;
+}*/
 
 .nav{
     font-size: 12px;
     font-weight: 700;
-    color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none; /*убираем пункты*/
+    margin: 0; /*убрали отступы, как бы обнулили всё*/
+    padding: 0; /*убрали отступы, как бы обнулили всё*/
+    display: flex;
+}
+
+.nav>li{
+    padding: 0 15px;
+}
+
+.nav-item{
+    color: #6e7ea9;
+}
+
+.btn-primary {
+    color: #fff;
+    letter-spacing: 1.5px; /*отступ между буквами*/
+    font-size: 12px; /*размер букв*/ 
+    font-weight: 700; /*толщина букв*/
+    text-transform: uppercase; /*все буквы КАПСОМ*/
+    background-color: #1085e4;
+    padding: 20px 41px;    /*отступы верх+низ и лево-право*/
+    border: 1px solid #1085e4; /*сплошная линия*/
+    border-radius: 30px;
+}
+
+.btn-primary:hover{ /*что происходит при наведении на ссылку*/
+    color: #1085e4;
+    background-color: #fff;
+}
+
+.btn-secondary {
+    color: #7e8bae;
+    letter-spacing: 1.5px;
+    font-size: 12px; /*размер букв*/ 
+    font-weight: 700; /*толщина букв*/
+    text-transform: uppercase; /*все буквы КАПСОМ*/
+    background-color: #cbdbe8;
+    padding: 20px 41px; 
+    border: 1px solid #cbdbe8; /*сплошная линия*/
+    border-radius: 30px;
+}
+
+.btn-secondary:hover{
+    color: #cbdbe8;
+    background-color: #fff;
 }
 
 .btn-free {
-    color: #fff;
+    letter-spacing: 1.7px;
     font-weight: 400;
     background-color: #1085e4;
-
+    padding: 21px 56px;
 }
 
+.btn-info {
+    color: #8085b1;
+    background: transparent;
+    border: 1px solid #dce1e5;
+    font-size: 12px; /*размер букв*/ 
+    letter-spacing: 1.5px;
+    font-weight: 700; /*толщина букв*/
+    padding: 20px 41px; 
+    border-radius: 30px;
+    text-transform: uppercase; 
+}
+
+.btn-info:hover{
+    color: #cbdbe8;
+    background-color: #fff;
+}
+
+.btn-group a + a {
+    margin-left: 15px; /*появился отступ между кнопками*/
+
+}
 .grid h2{
     font-size: 40px;
     font-weight: 700;
@@ -49,4 +161,68 @@ h1 {
     font-size: 14px;
     color: #1085e4;
     font-weight: 600;
+}
+
+.list-stat{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 76px;
+}
+
+.list-stat>li{
+    font-size: 12px;
+    font-weight: 700;
+    color: #1085e4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+}
+
+.list-stat>li>span{
+    display: block;
+    font-size: 60px;
+    color: #bacbdc;
+    margin-bottom: 23px;
+    letter-spacing: 0; /*обнулить, чтобы не наследовалось*/
+}
+
+
+
+.screen{
+    margin-top: 36px;
+    margin-bottom: -7px;
+}
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+.box-price-item{
+    background-color: #f5faff;
+}
+.box-price-item.active{
+    background-color: #192b59;
+    color: #fff;
+}
+.box-price-item ul{
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 0;
+}
+/* PAGE */
+
+.page-stat, .page-screen{
+    background-color: #edf6ff;
+}
+
+.page-stat{
+    padding: 116px 0 96px 0;
+}
+
+.page-plan, .page-screen {
+    text-align: center;
+}
+.page-screen{
+    padding: 116px 0 0 0;
+
 }
